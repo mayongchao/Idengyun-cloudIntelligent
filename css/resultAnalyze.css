@@ -1,0 +1,479 @@
+.clearfix:after,
+.clearfix:before {
+  content: "";
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+.resultWrapper {
+  background-color: #fdeef1;
+}
+.navScare {
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.3866666666666667rem 0.64rem 0.64rem 0.64rem;
+  font-size: 0.7253333333333334rem;
+  line-height: 0.7253333333333334rem;
+  text-align: center;
+  color: #333333;
+}
+.navScare .iconBack {
+  width: 0.4266666666666667rem;
+  float: left;
+}
+.navScare .iconMore {
+  width: 0.9386666666666666rem;
+  float: right;
+  margin-top: 0.21333333333333335rem;
+}
+.navScare .iconShare {
+  width: 0.8106666666666666rem;
+  float: right;
+}
+.scores {
+  width: 100%;
+  background-color: #f9f9f9;
+  margin-top: 4.586666666666667rem;
+}
+.scores .circleWrapper {
+  position: relative;
+  width: 5.76rem;
+  height: 5.76rem;
+  background-color: #f9f9f9;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: -2.88rem;
+}
+.scores .circleWrapper #scores {
+  position: absolute;
+  left: 1.0666666666666667rem;
+  top: 1.3653333333333333rem;
+  z-index: 100000;
+  font-size: 0.512rem;
+  color: #ffffff;
+}
+.scores .circleWrapper #scores span {
+  font-size: 1.024rem;
+  color: #333333;
+  display: inline-block;
+}
+.scores .circleWrapper #scores .score {
+  position: absolute;
+  color: #333333;
+  top: 0.08533333333333333rem;
+  left: 1.2373333333333334rem;
+}
+.scores .circleWrapper .circleMiddle {
+  position: absolute;
+  left: 2.88rem;
+  top: 2.88rem;
+  margin-top: -1.8133333333333332rem;
+  margin-left: -1.8133333333333332rem;
+  width: 3.6266666666666665rem;
+  height: 3.6266666666666665rem;
+  background: url("../images/bg_Gradient@2x.png") no-repeat center;
+  background-size: 100%;
+}
+.scores .circleWrapper .circleMiddle #circle {
+  display: inline-block;
+}
+.scores .circleWrapper .circleMiddle .circleInside {
+  position: absolute;
+  width: 2.6666666666666665rem;
+  height: 2.6666666666666665rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  left: 1.8133333333333332rem;
+  top: 1.8133333333333332rem;
+  margin-left: -1.3333333333333333rem;
+  margin-top: -1.3333333333333333rem;
+  font-size: 0.512rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 2.6666666666666665rem;
+  /*span{
+          font-size: 48/@rem;
+          color: #333333;
+          display: inline-block;
+        }
+        .score{
+          position: absolute;
+          color: #333333;
+          top: -6/@rem;
+          left: 80/@rem;
+        }*/
+}
+.scores .circleWrapper .circleMiddle .circleInside .point {
+  width: 0.4693333333333333rem;
+  height: 0.4693333333333333rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  top: -0.64rem;
+  left: 1.1733333333333333rem;
+  /* margin-top: -9/@rem;
+          margin-left: -9/@rem;*/
+}
+.scores .circleWrapper .circleMiddle .circleInside .point .redPoint {
+  width: 0.21333333333333335rem;
+  height: 0.21333333333333335rem;
+  border-radius: 50%;
+  background-color: #ef508d;
+  position: absolute;
+  left: 0.23466666666666666rem;
+  top: 0.23466666666666666rem;
+  margin-top: -0.10666666666666667rem;
+  margin-left: -0.10666666666666667rem;
+}
+.scores .circleWrapper .circleMiddle .circleInside .triangle {
+  width: 0.384rem;
+  height: 0.384rem;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -0.064rem;
+  left: 1.1733333333333333rem;
+  /*margin-top: -9/@rem;
+          margin-left: -5/@rem;*/
+}
+.scores .part {
+  text-align: center;
+  font-size: 0.6826666666666666rem;
+  color: #202020;
+  margin-top: 0.64rem;
+  margin-bottom: 0.4266666666666667rem;
+}
+.scores .compareScore {
+  text-align: center;
+  font-size: 0.5546666666666666rem;
+  color: #666666;
+  margin-bottom: 1.4933333333333334rem;
+}
+.scores .compareScore span {
+  font-size: 0.6826666666666666rem;
+  color: #333333;
+}
+.scores .complexionWra {
+  box-sizing: border-box;
+  padding: 0 0.64rem;
+  margin-bottom: 0.64rem;
+}
+.scores .complexionWra .complexion {
+  width: 100%;
+  height: 4.906666666666666rem;
+  background-color: #fff;
+  border-radius: 0.21333333333333335rem;
+  box-shadow: #7e8c8d;
+}
+.scores .complexionWra .complexion .text {
+  font-size: 0.6826666666666666rem;
+  color: #333333;
+  margin: 0.8533333333333334rem 0 0 0.96rem;
+}
+.scores .complexionWra .complexion .colorBar {
+  height: 0.5973333333333334rem;
+  width: 12.8rem;
+  border-radius: 0.32rem;
+  margin-top: 0.64rem;
+  margin-left: 0.96rem;
+  overflow: hidden;
+}
+.scores .complexionWra .complexion .colorBar .colorBlock {
+  width: 0.8533333333333334rem;
+  height: 100%;
+  background-color: #bfa;
+  float: left;
+}
+.scores .complexionWra .complexion .colorBar li:nth-child(1) {
+  background-color: #fbe6d3;
+}
+.scores .complexionWra .complexion .colorBar li:nth-child(2) {
+  background-color: #f2dcc6;
+}
+.scores .complexionWra .complexion .colorBar li:nth-child(3) {
+  background-color: #e1cbb7;
+}
+.scores .complexionWra .complexion .colorBar li:nth-child(4) {
+  background-color: #d9bfb0;
+}
+.scores .complexionWra .complexion .colorBar li:nth-child(5) {
+  background-color: #d5b3a3;
+}
+.scores .complexionWra .complexion .colorBar li:nth-child(6) {
+  background-color: #ceac9a;
+}
+.scores .complexionWra .complexion .colorBar li:nth-child(7) {
+  background-color: #c2a491;
+}
+.scores .complexionWra .complexion .colorBar li:nth-child(8) {
+  background-color: #b2977e;
+}
+.scores .complexionWra .complexion .colorBar li:nth-child(9) {
+  background-color: #ad876c;
+}
+.scores .complexionWra .complexion .colorBar li:nth-child(10) {
+  background-color: #9d795c;
+}
+.scores .complexionWra .complexion .colorBar li:nth-child(11) {
+  background-color: #8b7057;
+}
+.scores .complexionWra .complexion .colorBar li:nth-child(12) {
+  background-color: #7e634b;
+}
+.scores .complexionWra .complexion .colorBar li:nth-child(13) {
+  background-color: #845e46;
+}
+.scores .complexionWra .complexion .colorBar li:nth-child(14) {
+  background-color: #79593d;
+}
+.scores .complexionWra .complexion .colorBar li:nth-child(15) {
+  background-color: #705744;
+}
+.scores .complexionWra .complexion .evaluateWar {
+  box-sizing: border-box;
+  padding: 0 1.7066666666666668rem 0 0.4266666666666667rem;
+  margin-top: 0.4266666666666667rem;
+}
+.scores .complexionWra .complexion .evaluateWar .evaluate {
+  position: relative;
+  margin-left: 0%;
+  width: 1.4933333333333334rem;
+  height: 0.8106666666666666rem;
+  background-color: #555555;
+  border-radius: 0.21333333333333335rem;
+  font-size: 0.512rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 0.8106666666666666rem;
+  z-index: 100;
+}
+.scores .complexionWra .complexion .evaluateWar .evaluate .triangle {
+  width: 0;
+  height: 0;
+  border-top: 0.21333333333333335rem solid transparent;
+  border-bottom: 0.21333333333333335rem solid #555555;
+  border-left: 0.21333333333333335rem solid transparent;
+  border-right: 0.21333333333333335rem solid transparent;
+  position: absolute;
+  left: 0.7466666666666667rem;
+  margin-left: -0.21333333333333335rem;
+  top: -0.384rem;
+}
+.scores .skinState .mine {
+  line-height: 2.1333333333333333rem;
+  font-size: 0.64rem;
+  color: #333333;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding: 0 0.64rem;
+  border-bottom: 1px solid #e6e6e6;
+}
+.scores .elementData {
+  box-sizing: border-box;
+  padding: 1.92rem 0 0.64rem 0.64rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+}
+.scores .elementData .text {
+  font-size: 0.5973333333333334rem;
+  color: #333333;
+  height: 4.010666666666666rem;
+  margin-top: -0.21333333333333335rem;
+  float: left;
+  margin-right: 1.4933333333333334rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.scores .elementData .form {
+  width: 10.88rem;
+  height: 3.6266666666666665rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.scores .elementData .form .left {
+  width: 100%;
+  background-color: #fff7f7;
+}
+.scores .elementData .form .middle {
+  width: 100%;
+  background-color: #f6fafb;
+}
+.scores .elementData .form .right {
+  width: 100%;
+  background-color: #fff7f7;
+}
+.scores .elementData .form .progressBar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.scores .elementData .form .progressBar .bar {
+  width: 100%;
+  height: 0.21333333333333335rem;
+  background-color: #f3f3f3;
+  border-radius: 0.10666666666666667rem;
+  overflow: hidden;
+}
+.scores .elementData .form .progressBar .bar .grease {
+  position: relative;
+  width: 0%;
+  height: 100%;
+  background-color: #fb609c;
+  border-radius: 0.10666666666666667rem;
+}
+.scores .elementData .form .progressBar .bar .moisture {
+  width: 0%;
+  height: 100%;
+  background-color: #fb609c;
+  border-radius: 0.10666666666666667rem;
+}
+.scores .elementData .form .progressBar .bar .vestigital {
+  width: 0%;
+  height: 100%;
+  background-color: #fb609c;
+  border-radius: 0.10666666666666667rem;
+}
+.scores .elementData .form .tagBar {
+  position: absolute;
+  width: 98%;
+  height: 4.266666666666667rem;
+  left: -1.0666666666666667rem;
+  top: -1.28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.scores .elementData .form .tagBar div {
+  height: 0.8533333333333334rem;
+}
+.scores .elementData .form .tagBar div div {
+  display: inline-block;
+  width: 2.3466666666666667rem;
+  height: 100%;
+  background-color: #555555;
+  border-radius: 0.21333333333333335rem;
+  position: relative;
+}
+.scores .elementData .form .tagBar div div .tri {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-top: 0.21333333333333335rem solid #555555;
+  border-left: 0.21333333333333335rem solid transparent;
+  border-bottom: 0.21333333333333335rem solid transparent;
+  border-right: 0.21333333333333335rem solid transparent;
+  top: 0.8106666666666666rem;
+  left: 0.96rem;
+}
+.scores .elementData .form .tagBar div div .text {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 0.4693333333333333rem;
+  color: #ffffff;
+  line-height: 1.1733333333333333rem;
+  text-align: center;
+}
+.scores .elementData .form .tagBar div .greaseLabel {
+  margin-left: 0%;
+}
+.scores .hint {
+  box-sizing: border-box;
+  padding: 0.7466666666666667rem 0.64rem;
+  background-color: #ffffff;
+}
+.scores .hint .hintText {
+  font-size: 0.5546666666666666rem;
+  color: #666666;
+  line-height: 0.8533333333333334rem;
+}
+.scores .download {
+  text-align: center;
+}
+.scores .download .downloadImg {
+  display: inline-block;
+  width: 5.1626666666666665rem;
+  height: 5.12rem;
+  background: url("../images/downloadImg.png") no-repeat center;
+  background-size: 5.1626666666666665rem 5.12rem;
+  margin-top: 1.0666666666666667rem;
+  margin-bottom: 0.64rem;
+}
+.scores .download .way {
+  text-align: center;
+  font-size: 0.5973333333333334rem;
+  color: #666666;
+}
+.scores .download .iconTri {
+  display: inline-block;
+  width: 0.5973333333333334rem;
+  height: 0.49066666666666664rem;
+  background: url("../images/triangle@2x.png") no-repeat center;
+  background-size: 0.5973333333333334rem 0.49066666666666664rem;
+  margin-top: 1.0666666666666667rem;
+  margin-bottom: 1.0666666666666667rem;
+}
+.scores .download .logo {
+  margin-left: 3.0933333333333333rem;
+  margin-bottom: 0.7466666666666667rem;
+}
+.scores .download .logo .logoImg {
+  width: 2.1333333333333333rem;
+  height: 2.1333333333333333rem;
+  background: url("../images/mtmy-logo.png") no-repeat center;
+  background-size: 2.1333333333333333rem 2.1333333333333333rem;
+  float: left;
+  margin-right: 0.64rem;
+}
+.scores .download .logo .logoText {
+  box-sizing: border-box;
+  padding: 0.32rem 0;
+  height: 2.1333333333333333rem;
+  float: left;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.scores .download .logo .logoText .mtmy {
+  font-size: 0.64rem;
+  color: #333333;
+}
+.scores .download .logo .logoText .text {
+  font-size: 0.512rem;
+  color: #333333;
+}
+.produceHead {
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 10;
+}
+#header .swiper-slide {
+  margin: 0 0.8533333333333334rem;
+  width: auto;
+  font-size: 0.5973333333333334rem;
+  color: #000000;
+  line-height: 2.1333333333333333rem;
+}
+.top-line {
+  width: 100%;
+  height: 0.042666666666666665rem;
+  text-align: center;
+  background-color: #e6e6e6;
+}
+.activeShowItem {
+  font-size: 0.64rem;
+  color: #ef508d!important;
+  border-bottom: 0.08533333333333333rem solid #ef508d;
+}

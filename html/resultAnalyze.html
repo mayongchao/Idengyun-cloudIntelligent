@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>结果分析</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
+    <!--需要修改引入对应的css-->
+    <link rel="stylesheet" href="../css/resultAnalyze.css">
+    <!--需要修改引入对应的css-->
+</head>
+<body>
+<div class="resultWrapper">
+    <!--头部-->
+    <div class="navScare">
+        <img src="../images/btn_nav_jump@2x.png" alt="" class="iconBack">
+        结果分析
+    </div>
+    <div class="scores clearfix">
+        <div class="circleWrapper">
+            <div class="circleMiddle">
+                <div id="scores">
+                        <span id="scoreValue">00</span><div class="score">分</div>
+                    </div>
+                <div id="circle"></div>
+                <div class="circleInside">
+                    <div class="point">
+                        <div class="redPoint"></div>
+                    </div>
+                    <div class="triangle">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="part">脸部</p>
+        <p class="compareScore">本次测试成绩打败了<span>53%</span>的美女</p>
+        <div class="complexionWra">
+            <div class="complexion clearfix">
+                <p class="text">肤色</p>
+                <ul class="colorBar">
+                    <li class="colorBlock"></li>
+                    <li class="colorBlock"></li>
+                    <li class="colorBlock"></li>
+                    <li class="colorBlock"></li>
+                    <li class="colorBlock"></li>
+                    <li class="colorBlock"></li>
+                    <li class="colorBlock"></li>
+                    <li class="colorBlock"></li>
+                    <li class="colorBlock"></li>
+                    <li class="colorBlock"></li>
+                    <li class="colorBlock"></li>
+                    <li class="colorBlock"></li>
+                    <li class="colorBlock"></li>
+                    <li class="colorBlock"></li>
+                    <li class="colorBlock"></li>
+                </ul>
+                <div class="evaluateWar">
+                    <div class="evaluate">
+                        <span>偏白</span>
+                        <div class="triangle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skinState">
+            <p class="mine">我的皮肤状态</p>
+        </div>
+        <div class="skinDataWra" style="background-color: #ffffff">
+            <div class="skinData" style="width: 100%;height: 250px;" id="main">
+            </div>
+        </div>
+        <div class="produceHead" id="header" style="overflow: hidden">
+            <div class="top-line"></div>
+            <ul class="swiper-wrapper scareList">
+                <li class="swiper-slide activeShowItem" i="0">清洁度</li>
+                <li class="swiper-slide" i="1">滋润度</li>
+                <li class="swiper-slide" i="2">防晒度</li>
+                <li class="swiper-slide" i="3">隐藏斑</li>
+                <li class="swiper-slide" i="4">黑头</li>
+                <li class="swiper-slide" i="5">敏感度</li>
+            </ul>
+            <div class="top-line"></div>
+        </div>
+        <div class="elementData">
+            <div class="text">
+                <p>油脂</p>
+                <p>水分</p>
+                <p>残留</p>
+            </div>
+            <div class="form">
+                <div class="left"></div>
+                <div class="middle"></div>
+                <div class="right"></div>
+                <div class="progressBar">
+                    <div class="bar">
+                        <div class="grease"></div>
+                    </div>
+                    <div class="bar">
+                        <div class="moisture"></div>
+                    </div>
+                    <div class="bar">
+                        <div class="vestigital"></div>
+                    </div>
+                </div>
+                <div class="tagBar">
+                    <div class="greaseBar">
+                        <div class="greaseLabel">
+                            <span class="text">油脂正常</span>
+                            <span class="tri"></span>
+                        </div>
+                    </div>
+                    <div class="moistureBar">
+                        <div class="moistureLabel">
+                            <span class="text">水份正常</span>
+                            <span class="tri"></span>
+                        </div>
+                    </div>
+                    <div class="vestigitalBar">
+                        <div class="vestigitalLabel">
+                            <span class="text">过多残留</span>
+                            <span class="tri"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hint">
+            <p class="hintText">检测部位出现了轻度痘痘问题，千万不要忘记防晒啊！防 晒！防晒！光线会加剧痘痘的严重程度哒！</p>
+        </div>
+        <div class="download">
+            <div class="downloadImg"></div>
+            <p class="way">长按二维码，识别二维码下载</p>
+            <div class="iconTri"></div>
+            <div class="logo clearfix">
+                <div class="logoImg"></div>
+                <div class="logoText">
+                    <p class="mtmy">每天美耶</p>
+                    <p class="text">测一测，就能知道肤质的变化</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../js/rem.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/swiper-3.4.2.jquery.min.js"></script>
+<script type="text/javascript" src="../js/echarts.js"></script>
+<script type="text/javascript" src="../js/circle-progress.js"></script>
+<script type="text/javascript" src="../js/resultAnalyze.js"></script>
+<script type="text/javascript">
+    $(function () {
+        /*设置油脂、水份、残留的成分指数*/
+        elementData(60, 30, 90)
+        /*雷达参数配置（沿逆时针配置参数，分别传入文字与数值）*/
+        radarArguments(['老大','老二','老三','老四'],[10,20,30,40,50,60],)
+        /*定义分数的方法*/
+        grade(80)
+        /*肤色色值配置参数*/
+        complexion(80)
+    })
+
+</script>
+</body>
+</html>
